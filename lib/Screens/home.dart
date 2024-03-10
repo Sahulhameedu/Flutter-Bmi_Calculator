@@ -375,7 +375,7 @@ class _HomeState extends State<Home> {
                   MaterialPageRoute(
                     builder: (context) => ResultScreen(
                       result: bmi,
-                      bmi_result: interpretBMI(bmi),
+                      bmiResult: interpretBMI(bmi),
                     ),
                   ),
                 );

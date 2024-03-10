@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ResultScreen extends StatefulWidget {
-  const ResultScreen({super.key, required this.result, required this.bmi_result});
+  const ResultScreen({super.key, required this.result, required this.bmiResult});
   final double result ;
-  final String bmi_result;
+  final String bmiResult;
   @override
   State<ResultScreen> createState() => _ResultScreenState();
 }
@@ -61,7 +61,7 @@ class _ResultScreenState extends State<ResultScreen> {
                         ),
                       ),
                       Text(
-                        widget.bmi_result,
+                        widget.bmiResult,
                         style: const TextStyle(
                           color: color,
                         ),
@@ -95,9 +95,9 @@ class _ResultScreenState extends State<ResultScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  const Text(
-                    "UnderWeight",
-                    style: TextStyle(
+                   Text(
+                    widget.bmiResult,
+                    style: const TextStyle(
                         color: Colors.white,
                         fontSize: 25.0,
                         fontWeight: FontWeight.w500),
